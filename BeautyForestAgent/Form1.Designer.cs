@@ -35,6 +35,7 @@
             this.btnTray = new System.Windows.Forms.Button();
             this.cmsMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.폼보이기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ntiTray = new System.Windows.Forms.NotifyIcon(this.components);
             this.종료ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.cmsMenu.SuspendLayout();
@@ -75,18 +76,24 @@
             this.폼보이기ToolStripMenuItem,
             this.종료ToolStripMenuItem});
             this.cmsMenu.Name = "cmsMenu";
-            this.cmsMenu.Size = new System.Drawing.Size(123, 48);
+            this.cmsMenu.Size = new System.Drawing.Size(181, 70);
             // 
             // 폼보이기ToolStripMenuItem
             // 
             this.폼보이기ToolStripMenuItem.Name = "폼보이기ToolStripMenuItem";
-            this.폼보이기ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.폼보이기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.폼보이기ToolStripMenuItem.Text = "폼보이기";
+            // 
+            // ntiTray
+            // 
+            this.ntiTray.ContextMenuStrip = this.cmsMenu;
+            this.ntiTray.Icon = ((System.Drawing.Icon)(resources.GetObject("ntiTray.Icon")));
+            this.ntiTray.Text = "트레이 아이콘";
             // 
             // 종료ToolStripMenuItem
             // 
             this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
-            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.종료ToolStripMenuItem.Text = "종료";
             // 
             // Form1
@@ -118,6 +125,7 @@
         private System.Windows.Forms.ContextMenuStrip cmsMenu;
         private System.Windows.Forms.ToolStripMenuItem 폼보이기ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 종료ToolStripMenuItem;
+        private System.Windows.Forms.NotifyIcon ntiTray;
     }
 }
 
